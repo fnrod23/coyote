@@ -220,10 +220,10 @@ index: index.html
         try {
             log('Requesting Bluetooth Device...');
             const device = await navigator.bluetooth.requestDevice({
-                filters: [{
+                /*filters: [{
                     namePrefix: 'D-LAB',
-                }],
-                //acceptAllDevices: true,
+                }],*/
+                acceptAllDevices: true,
                 optionalServices: [coyoteService, batteryService]
             });
 
