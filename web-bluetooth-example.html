@@ -221,7 +221,7 @@ index: index.html
             log('Requesting Bluetooth Device...');
             const device = await navigator.bluetooth.requestDevice({
                 filters: [{
-                    name: 'D-LAB ESTIM01',
+                    name: 'D-LAB\x20ESTIM01',
                     namePrefix: 'D-LAB',
                     services: [coyoteService],
                 }],                
